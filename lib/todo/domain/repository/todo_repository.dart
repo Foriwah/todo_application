@@ -1,5 +1,5 @@
 
-import 'package:my_todo_app/features/todo/domain/models/todo_model.dart';
+import 'package:my_todo_app/todo/domain/models/todo_model.dart';
 
 abstract class TodoRepository{
 

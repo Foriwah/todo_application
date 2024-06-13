@@ -16,6 +16,8 @@ LIGHT MODE COLOR CODES
 static Color primaryColor = Color(0xFFF36A50);
 static Color background = Color(0xffF7F6FB);
 static Color secondaryBackgroundLight = const Color(0xFFF5F5F5);
+static Color navyBlue = const Color(0XFF000080);
+static Color darkGray = const Color(0XFF333333);
   
 
 

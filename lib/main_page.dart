@@ -2,7 +2,7 @@ import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.da
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_todo_app/core/utils/custom_colors.dart';
-import 'package:my_todo_app/features/dashboard/presentation/pages/dashboard.dart';
+import 'package:my_todo_app/todo/presentation/pages/dashboard/pages/dashboard.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
