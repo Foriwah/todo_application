@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_todo_app/core/utils/custom_colors.dart';
 import 'package:my_todo_app/core/utils/fonts.dart';
 import 'package:my_todo_app/main_page.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Todo App',
       theme: ThemeData(
         fontFamily: Fonts.urbanist,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: CustomColors.primaryColor),
         useMaterial3: false,
         
       ),

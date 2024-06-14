@@ -2,6 +2,7 @@ import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.da
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_todo_app/core/utils/custom_colors.dart';
+import 'package:my_todo_app/todo/presentation/pages/add_todo/pages/add_todo.dart';
 import 'package:my_todo_app/todo/presentation/pages/dashboard/pages/dashboard.dart';
 
 class MainPage extends StatefulWidget {
@@ -30,10 +31,17 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       body: pages[currentIndex],
       floatingActionButton: GestureDetector(
-        onTap: () {},
-        child:  CircleAvatar(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const AddTodo(),
+            ),
+          );
+        },
+        child: CircleAvatar(
           radius: 30,
-           backgroundColor: CustomColors.primaryColor,
+          backgroundColor: CustomColors.primaryColor,
           child: Icon(
             size: 25,
             CupertinoIcons.plus,
@@ -43,8 +51,8 @@ class _MainPageState extends State<MainPage> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: AnimatedBottomNavigationBar(
-        leftCornerRadius: 30,
-        rightCornerRadius: 30,
+          leftCornerRadius: 30,
+          rightCornerRadius: 30,
           icons: const [
             CupertinoIcons.home,
             CupertinoIcons.calendar,
@@ -54,9 +62,9 @@ class _MainPageState extends State<MainPage> {
           activeIndex: currentIndex,
           backgroundColor: CustomColors.genericWhite,
           gapLocation: GapLocation.center,
-        notchSmoothness: NotchSmoothness.softEdge,
-         activeColor: CustomColors.primaryColor,
-        inactiveColor: CustomColors.genericBlack.withAlpha(100),
+          notchSmoothness: NotchSmoothness.softEdge,
+          activeColor: CustomColors.primaryColor,
+          inactiveColor: CustomColors.genericBlack.withAlpha(100),
           splashColor: Colors.transparent,
           onTap: (index) => setState(() => currentIndex = index)),
     );
