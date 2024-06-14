@@ -33,3 +33,10 @@ List tips = [
   'Concentrate on one task at a time for better efficiency',
   'Regular short breaks improve productivity',
 ];
+
+
+List priorityList = [
+  'High Priority',
+  'Medium Priority',
+  'Low Priority',
+];

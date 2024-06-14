@@ -19,6 +19,8 @@ static Color secondaryBackgroundLight = const Color(0xFFF5F5F5);
 static Color navyBlue = const Color(0XFF000080);
 static Color darkGray = const Color(0XFF333333);
 static Color lightgray = const Color(0XFFF0F0F0);
+static Color complementaryColor = const Color(0XFF0C95AF);
+
 
 
 
