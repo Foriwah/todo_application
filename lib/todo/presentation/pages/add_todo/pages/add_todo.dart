@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:my_todo_app/core/utils/custom_colors.dart';
 import 'package:my_todo_app/core/utils/data_list.dart';
 import 'package:my_todo_app/todo/presentation/widgets/buttons.dart';
+import 'package:my_todo_app/todo/presentation/widgets/custom_app_bar.dart';
 import 'package:my_todo_app/todo/presentation/widgets/custom_formfield.dart';
 import 'package:my_todo_app/todo/presentation/widgets/modal_listtile.dart';
 
@@ -28,27 +29,7 @@ class _AddTodoState extends State<AddTodo> {
     final cs = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: CustomColors.background,
-      appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: Icon(
-            CupertinoIcons.back,
-            color: CustomColors.genericBlack,
-          ),
-        ),
-        backgroundColor: CustomColors.background,
-        elevation: 0,
-        centerTitle: true,
-        title: Text(
-          'Add A Todo',
-          style: TextStyle(
-              color: CustomColors.primaryColor,
-              fontSize: 24,
-              fontWeight: FontWeight.w600),
-        ),
-      ),
+      appBar: customAppBar(context: context,title: 'Add Todo'),
       body: Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 16,
