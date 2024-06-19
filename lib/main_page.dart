@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:my_todo_app/core/utils/custom_colors.dart';
 import 'package:my_todo_app/todo/presentation/pages/add_todo/pages/add_todo.dart';
 import 'package:my_todo_app/todo/presentation/pages/boards/pages/boards.dart';
+import 'package:my_todo_app/todo/presentation/pages/calendar/pages/calendar_view.dart';
 import 'package:my_todo_app/todo/presentation/pages/dashboard/pages/dashboard.dart';
 
 class MainPage extends StatefulWidget {
@@ -16,7 +17,7 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   List pages = const [
     Dashboard(),
-    Dashboard(),
+    MyCalendar(),
     Boards(),
     Dashboard(),
   ];

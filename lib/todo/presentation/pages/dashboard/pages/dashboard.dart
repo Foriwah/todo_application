@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:my_todo_app/core/utils/custom_colors.dart';
 import 'package:my_todo_app/core/utils/data_list.dart';
+import 'package:my_todo_app/todo/presentation/widgets/custom_heading.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -11,8 +12,6 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-  
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -25,11 +24,8 @@ class _DashboardState extends State<Dashboard> {
               const SizedBox(
                 height: 20,
               ),
-              Text(
-                'Dashboard',
-                style: TextStyle(
-                    color: CustomColors.genericBlack.withAlpha(140),
-                    fontSize: 20),
+              const DefaultHeading(
+                text: 'Dashboard',
               ),
               const SizedBox(
                 height: 20,
