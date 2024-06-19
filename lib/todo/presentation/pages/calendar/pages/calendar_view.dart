@@ -17,7 +17,7 @@ class _MyCalendarState extends State<MyCalendar> {
         child: Scaffold(
       backgroundColor: CustomColors.background,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
+        padding:const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
